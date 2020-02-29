@@ -5,9 +5,9 @@ import dash_core_components as dcc
 
 
 import render_graf
-
 import available_fields as af
 
+bars = af.default_data[:4]
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -22,7 +22,7 @@ app.layout = html.Div([
         max_date_allowed=dt(2020, 2, 20),
         initial_visible_month=dt(2019, 10, 1),
         start_date=dt(2019, 10, 1),
-        end_date=dt(2019, 11, 1),
+        end_date=dt(2019, 12, 3),
         display_format='DD.MM.YY'
     ),
 
@@ -41,7 +41,8 @@ app.layout = html.Div([
 def update_output(start_date, end_date):
         start_date = dt.strptime(start_date.split('T')[0], d_format)
         end_date = dt.strptime(end_date.split('T')[0], d_format)
-        return render_graf.render_graf(start_date, end_date)
+        return render_graf.render_graf(start_date, end_date, bars)
+
 
 
 

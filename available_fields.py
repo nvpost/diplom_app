@@ -1,4 +1,4 @@
-available_fields=['users',
+default_data=['users',
              'visits',
              'buyers',
              'idle',
