@@ -1,0 +1,16 @@
+available_fields=['users',
+             'visits',
+             'buyers',
+             'idle',
+             'goals',
+             'revenue',
+             'total_pageViews',
+             'pageViews_per_user',
+             'pageViews_per_buyers',
+             'goals_per_user',
+             'goals_per_buyers',
+             'visit_per_user',
+             'visit_per_buyers',
+             'revenue_per_user_arpu',
+             'revenue_per_buyers_arppu'
+             ]
